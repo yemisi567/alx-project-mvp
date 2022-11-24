@@ -1,0 +1,165 @@
+html body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+@font-face {
+  font-family: "Noto Sans Jap";
+  src: url("/src/fonts/Noto\ Sans\ JP\ 400.otf");
+}
+
+body {
+  font-family: "Noto Sans Jap";
+}
+* {
+  box-sizing: border-box;
+}
+
+/*Create a responsive Carousel*/
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+body h1 {
+  text-align: center;
+}
+
+.other-pages {
+  color: blue;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50%;
+}
+.button-container {
+  margin: -1% 0 0 -5%;
+  padding: 25px
+}
+.nav {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: auto;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+.slideshow {
+  margin: 20px auto;
+  overflow: hidden;
+  max-width: 90%;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  min-height: calc(20vh - 6px);
+  border-radius: 10px;
+}
+
+/* Buttons */
+.button2 {
+  background-color: #227eff;
+  border: none;
+  color: white;
+  width: 91px;
+  height: 31px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5%;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  top: 60px;
+  width: 300px;
+  z-index: 200;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 20px;
+  display: block;
+}
+
+.icon-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #071827;
+  margin-left: 5px;
+}
+
+.icon {
+  margin-top: 4px;
+}
